@@ -1,15 +1,16 @@
-import React from 'react';
-import {Routes,Route} from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "../src/Pages/Home";
 import Index from "../src/Pages/Index";
 import NotFound from "../src/Pages/NotFound";
 export const AppRoutes = () => {
-    return (<nav> 
-            <Routes>
-            <Route path="/" element={<Index/>} exact> </Route>
-            <Route path="/home" element={<Home/>} exact> </Route>
-            <Route path="*" element={<NotFound/>}> </Route>
-          </Routes>
-            </nav>
-    )
-}
+  return (
+    <nav>
+      <Routes>
+        <Route path="/" exact element={<Index />} />
+        <Route path="/home" exact element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </nav>
+  );
+};

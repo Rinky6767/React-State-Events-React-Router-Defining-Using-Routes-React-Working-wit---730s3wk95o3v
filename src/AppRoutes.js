@@ -4,12 +4,12 @@ import Home from "../src/Pages/Home";
 import Index from "../src/Pages/Index";
 import NotFound from "../src/Pages/NotFound";
 export const AppRoutes = () => {
-    return (<> 
+    return (<nav> 
             <Routes>
             <Route path="/" component={Index}> </Route>
             <Route path="/home" component={Home}> </Route>
             <Route path="*" component={NotFound}> </Route>
           </Routes>
-            </>
+            </nav>
     )
 }

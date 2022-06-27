@@ -6,9 +6,9 @@ import NotFound from "../src/Pages/NotFound";
 export const AppRoutes = () => {
     return (<nav> 
             <Routes>
-            <Route path="/" component={Index}> </Route>
-            <Route path="/home" component={Home}> </Route>
-            <Route path="*" component={NotFound}> </Route>
+            <Route path="/" element={<Index/>} exact> </Route>
+            <Route path="/home" element={<Home/>} exact> </Route>
+            <Route path="*" element={<NotFound/>}> </Route>
           </Routes>
             </nav>
     )
